@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <title>Pachmarhi Tourism</title>
+ <style>
+  * {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #ebe5dd;
+}
+
+/* HEADER */
+
+.main {
+  margin: auto;
+  max-width: 1200px;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/pachmarhi.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAVIGATION */
+.main-list {
+  float: right;
+  font-variant: small-caps;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 1000px) {
+  .main-list {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-list {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-list {
+    font-size: 7px;
+    font-weight: bold;
+  }
+}
+
+.main-list-item {
+  display: inline-block;
+}
+
+.main-list-item a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  transition: 0.7s ease;
+}
+
+.main-list-item a:hover {
+border: 2px solid white;
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.history-list {
+  margin-left: 40px;
+}
+
+.history-list a {
+  text-decoration: none;
+}
+/* TITLE */
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  color: white;
+  font-size: 4vw;
+  font-variant: small-caps;
+}
+.heading:hover{
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+/* MAIN CONTENT */
+
+/* IMAGE GALLERY */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/*Footer design*/
+ footer{
+  background-color: #303036;
+  color: #d3d3d3;
+  height: 400px;
+  position: relative;
+ }
+ .footer .footer-bottom{
+  background-color: #343a40;
+  color: #686868;
+  text-align: center;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 20px;
+ }
+ .footer .footer-content{
+  height: 300px;
+  display: flex;
+ }
+.footer .footer-content .footer-section{
+  flex: 1px;
+  padding: 25px;
+}
+.footer .footer-content h1{
+  color: white;
+}
+.footer-para{
+  margin: 10px 0;
+}
+.footer .footer-content .about .contact span{
+  display: block;
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+
+}
+.footer .footer-content .about .socials a {
+  border: 1px solid gray;
+  width: 45px;
+  height: 38px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #d3d3d3;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.footer .footer-content .about .socials a:hover{
+  color: white;
+  border: 1px solid white;
+  transition: all0.3s;
+
+}
+.footer-section{
+  text-align: center;
+}
+.logo-text{
+  font-variant: initial;
+}
+.logo-text .logo-span{
+  color: #a2c376;
+}
+ </style>
+
+
+    
+</head>
+
+
+<body>
+  <!-- Header and Nav -->
+  <header>
+    <nav>
+      <div class="main">
+        
+        <ul class="main-list">
+          <li class="active main-list-item"><a href="index.html">Home</a></li>
+          <li class="main-list-item"><a href="famousplaces.html">Famous Places</a></li>
+          <li class="main-list-item"><a href="restaurants.html">Restaurants</a></li>
+          <li class="main-list-item"><a href="TravelBookings.html">Travel Bookings</a></li>
+          <li class="main-list-item"><a href="hospitals.html">Hospitals</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- // Header and Nav -->
+
+    <!-- Title heading -->
+    <div class="title">
+      <span class="heading">Welcome To Pachmarhi</span>
+    </div>
+  </header>
+  <!-- // Title heading -->
+
+  <!-- History section -->
+  <div class="page-wrapper">
+    <main>
+      <section>
+        <div class="page-wrapper">
+          <div class="history">
+            <h1 class="history-heading1">History of Pachmarhi</h1>
+            <span class="history-caption">Pachmarhi is a hill station in Narmadapuram district of Madhya
+                Pradesh state of central India</span>
+            <hr />
+
+            <!-- Etymology -->
+            <h3 class="history-heading2">Etymology</h3>
+            <p class="history-para">Pachmarhi’s history had undergone through many momentous and significant chapters that dates
+                back to an era of Maratha rulers. The history of this hill station begun from the time when
+                Maratha soldiers along with Rani of Jhansi decided to revolt against British force and to
+                quell them, English Force decided to call upon Captain Forsyth of the Bengal Lancers. As
+                soon as he came to this place, he found the place as a paradise on the earth and he found
+                himself just standing at the height of 2000 feet.
+        
+            </p>
+            <!-- // Etymology -->
+        
+            
+
+        
+          
+            <!-- Famous Things -->
+            <h3 class="history-heading2">Famous Things</h3>
+            <p class="history-para">Pachmarhi is a hill station of central India. It is also famous for Satpura Tiger Reserve,
+                Satpura National Park, Lord Shiva, Pandavas of Mahabharata.</p>
+
+            <!-- Image Gallery -->
+            <div class="row">
+              <div class="column">
+                <img src="./images/h.jpg">
+
+              </div>
+              <div class="column">
+                <img src="./images/k.jpg">
+
+
+              </div>
+              <div class="column">
+                <img src="./images/i.jpg">
+              </div>
+              <div class="column">
+                <img src="./images/l.jpg">
+
+              </div>
+
+            </div>
+
+
+            <!-- // Famous Things -->
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <!-- // History section -->
+
+<!-- Footer -->
+<footer>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h1 class="logo-text">
+          <span class="logo-span">S</span>akshi
+          <span class="logo-span">G</span>orkhe
+        </h1>
+        <p class="footer-para">
+          I am a creative, Web Developer with command on Latest Tech stacks
+        </p>
+        <div class="contact">
+          <span><i class="fas fa-phone"></i>&nbsp; +91-9567438299</span>
+          <span>
+            <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><i class="fas fa-envelope"></i>&nbsp;
+            sakshigorkhe67@gmail.com</span
+          ></a>
+        </div>
+        <div class="socials">
+          <a
+            href="https://www.facebook.com/sakshi.gorkhe.7"
+            target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/feed/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/i/flow/login" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://github.com/login" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; | Designed By Sakshi Gorkhe.
+    </div>
+  </div>
+</footer>
+<!-- // Footer -->
+</body>
+
+</html>

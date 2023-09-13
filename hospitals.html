@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .main {
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(./images/pachmarhi.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        /* NAVIGATION */
+        .main-list {
+            float: right;
+            font-variant: small-caps;
+            list-style-type: none;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 1000px) {
+            .main-list {
+                font-size: 17px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .main-list {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            .main-list {
+                font-size: 7px;
+                font-weight: bold;
+            }
+        }
+
+        .main-list-item {
+            display: inline-block;
+        }
+
+        .main-list-item a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid transparent;
+            padding: 5px 20px;
+            transition: 0.7s ease;
+        }
+
+        .main-list-item a:hover {
+            border: 2px solid white;
+        }
+
+        /* TITLE */
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .heading {
+            color: white;
+            font-size: 4vw;
+            font-variant: small-caps;
+        }
+
+        .heading:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        /*hospital*/
+        .hospital-link {
+  color: green;
+  text-decoration: none;
+  
+}
+.page-wrapper {
+  min-height: 100%;
+}
+
+/* HISTORY */
+.history {
+  margin: 20px;
+}
+
+.history-para {
+  padding: 13px;
+}
+
+.history-heading2 {
+  margin: 2px;
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Footer design*/
+        footer {
+            background-color: #303036;
+            color: #d3d3d3;
+            height: 400px;
+            position: relative;
+
+        }
+
+        .footer .footer-bottom {
+            background-color: #343a40;
+            color: #686868;
+            text-align: center;
+            height: 40px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            padding-top: 20px;
+        }
+
+        .footer .footer-content {
+            height: 300px;
+            display: flex;
+        }
+
+        .footer .footer-content .footer-section {
+            flex: 1px;
+            padding: 25px;
+        }
+
+        .footer-content h1 {
+            color: white;
+        }
+
+        .footer-para {
+            margin: 10px 0;
+        }
+
+        .footer .footer-content .about .contact span {
+            display: block;
+            margin: 18px;
+            font-size: 1.1rem;
+        }
+
+        .footer .footer-content .about .socials a {
+            border: 1px solid gray;
+            width: 45px;
+            height: 38px;
+            padding-top: 5px;
+            margin-right: 5px;
+            text-align: center;
+            display: inline-block;
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: #d3d3d3;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .footer-section {
+            text-align: center;
+        }
+
+        .logo-text {
+            font-variant: initial;
+        }
+
+        .logo-text .logo-span {
+            color: #a2c376;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header and Nav -->
+    <header>
+        <nav>
+            <div class="main">
+
+                <ul class="main-list">
+                    <li class="active main-list-item"><a href="index.html">Home</a></li>
+                    <li class="main-list-item"><a href="famousplaces.html">Famous Places</a></li>
+                    <li class="main-list-item"><a href="restaurants.html">Restaurants</a></li>
+                    <li class="main-list-item"><a href="TravelBookings.html">Travel Bookings</a></li>
+                    <li class="main-list-item"><a href="hospitals.html">Hospitals</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- // Header and Nav -->
+
+        <!-- Title heading -->
+        <div class="title">
+            <span class="heading">Hospitals</span>
+        </div>
+    </header>
+    <!-- // Title heading -->
+
+    <div class="page-wrapper">
+        <main>
+            <div class="history">
+                <h1 class="history-heading1">
+                    Hospitals in Pachmarhi(Click to view their location)
+                </h1>
+                <hr/>
+                <ul class="history-list restraunt">
+                   <li> <a class="hospital-link"
+                            href="https://www.justdial.com/Vidisha/Vidisha-Apollo-Multispeciality-Hospital-Near-Hanuman-Mandir-Mukharji-Nagar/9999P7592-7592-220328140007-G6D3_BZDET?xid=UGFjaG1hcmhpIEhvc3BpdGFscw==" target="_blank">
+                            Vidisha Apollo Multispeciality Hospital</a></li>
+                        
+                        <li> <a class="hospital-link"
+                          href="https://www.justdial.com/Bhopal/Siddhanta-Redcross-Superspeciality-Hospital-Near-Redcross-Shivaji-Nagar/0755PX755-X755-160211102331-V3H3_BZDET?xid=UGFjaG1hcmhpIEhvc3BpdGFscw==" target="_blank">
+                           Siddhanta Redcross Superspeciality Hospital</a></li>
+                        
+                        <li> 
+                    <a class="hospital-link"
+                            href="https://www.justdial.com/Sagar/Dr-Ilyas-Hussain-Khan-Dr-Zahida-Ilyas-Nidaan-Hospital-Research-Center-Opposite-District-Hospital-Sagar-Ho/9999P7582-7582-160411113647-J3Z9_BZDET?xid=UGFjaG1hcmhpIEhvc3BpdGFscw==" target="_blank">
+                            Dr. Ilyas Hussain Khan & Dr Zahida Ilyas ( Nidaan Hospital & Research Center )   </li>
+                        </a></li>
+                        <li>
+                    <a class="hospital-link"
+                            href="https://www.justdial.com/Jaipur/Mahatma-Gandhi-Hospital-Sitapura-Industrial-Area/0141PX141-X141-210324110008-G2G8_BZDET?xid=UGFjaG1hcmhpIEhvc3BpdGFscw==" target="_blank">
+                            Mahatma Gandhi Hospital</a></li>
+                    <li>
+                    <a class="hospital-link"
+                            href="https://www.justdial.com/Rohtak/Gaurav-Homeopathic-Clinic-Near-New-Bus-Stand-Kalanaur-Rohtak/9999P1262-1262-180514233013-I5W9_BZDET?xid=UGFjaG1hcmhpIEhvc3BpdGFscw==" target="_blank">
+                            Gaurav Homeopathic Clinic   
+                        </a></li>
+                        
+                </ul>
+            </div>
+            
+        </main>
+        </div>
+        
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="logo-text">
+                        <span class="logo-span">S</span>akshi
+                        <span class="logo-span">G</span>orkhe
+                    </h1>
+                    <p class="footer-para">
+                        I am a creative, Web Developer with command on Latest Tech stacks
+                    </p>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i>&nbsp; +91-9567438299</span>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank"><i class="fas fa-envelope"></i>&nbsp;
+                            sakshigorkhe67@gmail.com</span
+                          ></a>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/sakshi.gorkhe.7" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/login" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; | Designed By Sakshi Gorkhe.
+            </div>
+        </div>
+    </footer>
+    <!-- // Footer -->
+</body>
+
+</html>
